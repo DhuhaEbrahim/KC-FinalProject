@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9505E6FB28BEA4600089BC0A /* CustomShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E6FA28BEA4600089BC0A /* CustomShapeView.swift */; };
+		9505E6FD28BEAA580089BC0A /* AllDoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */; };
+		9505E6FF28BEAECD0089BC0A /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */; };
+		9505E70128BEB16F0089BC0A /* AllPharmaciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */; };
+		95969AD528BE22FD003A5C75 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AD428BE22FD003A5C75 /* Onboarding.swift */; };
+		95969ADA28BE2B0E003A5C75 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AD928BE2B0E003A5C75 /* SignInView.swift */; };
+		95969ADC28BE2BCC003A5C75 /* SecureFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969ADB28BE2BCC003A5C75 /* SecureFieldView.swift */; };
+		95969ADE28BE2C59003A5C75 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969ADD28BE2C59003A5C75 /* CreateAccountView.swift */; };
+		95969AE028BE2CBE003A5C75 /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969ADF28BE2CBE003A5C75 /* AccountInfoView.swift */; };
+		95969AE228BE2EC7003A5C75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE128BE2EC7003A5C75 /* HomeView.swift */; };
+		95969AE428BE2F62003A5C75 /* SelectionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE328BE2F62003A5C75 /* SelectionBarView.swift */; };
+		95969AE728BE2FBB003A5C75 /* DoctorsInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */; };
+		95969AE928BE3009003A5C75 /* DoctorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE828BE3009003A5C75 /* DoctorInfoView.swift */; };
+		95969AEB28BE30A6003A5C75 /* SkinConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AEA28BE30A6003A5C75 /* SkinConditionView.swift */; };
+		95969AED28BE3118003A5C75 /* SkinGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AEC28BE3118003A5C75 /* SkinGuideView.swift */; };
+		95969AEF28BE31F6003A5C75 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AEE28BE31F6003A5C75 /* NotificationsView.swift */; };
+		95969AF128BE3233003A5C75 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AF028BE3233003A5C75 /* ProfileView.swift */; };
+		95969AF328BE32A0003A5C75 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AF228BE32A0003A5C75 /* CheckBoxView.swift */; };
+		95969AF628BE3451003A5C75 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AF528BE3451003A5C75 /* ImagePicker.swift */; };
+		95969AF928BE50A1003A5C75 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95969AF828BE50A1003A5C75 /* Rubik-Light.ttf */; };
+		95969AFD28BE50B8003A5C75 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95969AFC28BE50B8003A5C75 /* Rubik-Regular.ttf */; };
+		95969AFF28BE50C4003A5C75 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95969AFE28BE50C4003A5C75 /* Rubik-Medium.ttf */; };
+		95969B0128BE50F7003A5C75 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95969B0028BE50F7003A5C75 /* Rubik-Bold.ttf */; };
+		95969B0328BE5103003A5C75 /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95969B0228BE5103003A5C75 /* Rubik-Black.ttf */; };
+		95A5506E28BBA99F0032F3C8 /* The_DermatologistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5506D28BBA99F0032F3C8 /* The_DermatologistApp.swift */; };
+		95A5507028BBA99F0032F3C8 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5506F28BBA99F0032F3C8 /* FirstView.swift */; };
+		95A5507228BBA9A20032F3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A5507128BBA9A20032F3C8 /* Assets.xcassets */; };
+		95A5507528BBA9A20032F3C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A5507428BBA9A20032F3C8 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9505E6FA28BEA4600089BC0A /* CustomShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeView.swift; sourceTree = "<group>"; };
+		9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoctorsView.swift; sourceTree = "<group>"; };
+		9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
+		9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPharmaciesView.swift; sourceTree = "<group>"; };
+		9527851028BF8539000DE649 /* The-Dermatologist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "The-Dermatologist-Info.plist"; sourceTree = SOURCE_ROOT; };
+		95969AD428BE22FD003A5C75 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		95969AD928BE2B0E003A5C75 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		95969ADB28BE2BCC003A5C75 /* SecureFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldView.swift; sourceTree = "<group>"; };
+		95969ADD28BE2C59003A5C75 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		95969ADF28BE2CBE003A5C75 /* AccountInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoView.swift; sourceTree = "<group>"; };
+		95969AE128BE2EC7003A5C75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		95969AE328BE2F62003A5C75 /* SelectionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionBarView.swift; sourceTree = "<group>"; };
+		95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsInfoModel.swift; sourceTree = "<group>"; };
+		95969AE828BE3009003A5C75 /* DoctorInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfoView.swift; sourceTree = "<group>"; };
+		95969AEA28BE30A6003A5C75 /* SkinConditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinConditionView.swift; sourceTree = "<group>"; };
+		95969AEC28BE3118003A5C75 /* SkinGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinGuideView.swift; sourceTree = "<group>"; };
+		95969AEE28BE31F6003A5C75 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		95969AF028BE3233003A5C75 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		95969AF228BE32A0003A5C75 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		95969AF528BE3451003A5C75 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		95969AF828BE50A1003A5C75 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		95969AFC28BE50B8003A5C75 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		95969AFE28BE50C4003A5C75 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		95969B0028BE50F7003A5C75 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		95969B0228BE5103003A5C75 /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
+		95A5506A28BBA99F0032F3C8 /* The Dermatologist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Dermatologist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A5506D28BBA99F0032F3C8 /* The_DermatologistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_DermatologistApp.swift; sourceTree = "<group>"; };
+		95A5506F28BBA99F0032F3C8 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		95A5507128BBA9A20032F3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95A5507428BBA9A20032F3C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95A5506728BBA99F0032F3C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95969AD628BE2A7B003A5C75 /* Onboarding File */ = {
+			isa = PBXGroup;
+			children = (
+				95A5506F28BBA99F0032F3C8 /* FirstView.swift */,
+				95969AD428BE22FD003A5C75 /* Onboarding.swift */,
+			);
+			path = "Onboarding File";
+			sourceTree = "<group>";
+		};
+		95969AD828BE2AD0003A5C75 /* Account Creation File */ = {
+			isa = PBXGroup;
+			children = (
+				95969AD928BE2B0E003A5C75 /* SignInView.swift */,
+				95969ADD28BE2C59003A5C75 /* CreateAccountView.swift */,
+				95969AF228BE32A0003A5C75 /* CheckBoxView.swift */,
+				95969ADF28BE2CBE003A5C75 /* AccountInfoView.swift */,
+				95969ADB28BE2BCC003A5C75 /* SecureFieldView.swift */,
+			);
+			path = "Account Creation File";
+			sourceTree = "<group>";
+		};
+		95969AE528BE2F91003A5C75 /* Home File */ = {
+			isa = PBXGroup;
+			children = (
+				95969AE128BE2EC7003A5C75 /* HomeView.swift */,
+				9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */,
+				95969AE328BE2F62003A5C75 /* SelectionBarView.swift */,
+				95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */,
+			);
+			path = "Home File";
+			sourceTree = "<group>";
+		};
+		95969AF428BE3412003A5C75 /* Skin Condition File */ = {
+			isa = PBXGroup;
+			children = (
+				95969AEA28BE30A6003A5C75 /* SkinConditionView.swift */,
+				95969AF528BE3451003A5C75 /* ImagePicker.swift */,
+			);
+			path = "Skin Condition File";
+			sourceTree = "<group>";
+		};
+		95969AF728BE507E003A5C75 /* Rubik Font */ = {
+			isa = PBXGroup;
+			children = (
+				95969B0028BE50F7003A5C75 /* Rubik-Bold.ttf */,
+				95969B0228BE5103003A5C75 /* Rubik-Black.ttf */,
+				95969AFE28BE50C4003A5C75 /* Rubik-Medium.ttf */,
+				95969AFC28BE50B8003A5C75 /* Rubik-Regular.ttf */,
+				95969AF828BE50A1003A5C75 /* Rubik-Light.ttf */,
+			);
+			path = "Rubik Font";
+			sourceTree = "<group>";
+		};
+		95A5506128BBA99F0032F3C8 = {
+			isa = PBXGroup;
+			children = (
+				95A5506C28BBA99F0032F3C8 /* The Dermatologist */,
+				95A5506B28BBA99F0032F3C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95A5506B28BBA99F0032F3C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95A5506A28BBA99F0032F3C8 /* The Dermatologist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95A5506C28BBA99F0032F3C8 /* The Dermatologist */ = {
+			isa = PBXGroup;
+			children = (
+				9527851028BF8539000DE649 /* The-Dermatologist-Info.plist */,
+				95969AF728BE507E003A5C75 /* Rubik Font */,
+				95A5506D28BBA99F0032F3C8 /* The_DermatologistApp.swift */,
+				9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */,
+				9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */,
+				95969AE828BE3009003A5C75 /* DoctorInfoView.swift */,
+				9505E6FA28BEA4600089BC0A /* CustomShapeView.swift */,
+				95969AF028BE3233003A5C75 /* ProfileView.swift */,
+				95969AEC28BE3118003A5C75 /* SkinGuideView.swift */,
+				95969AEE28BE31F6003A5C75 /* NotificationsView.swift */,
+				95969AF428BE3412003A5C75 /* Skin Condition File */,
+				95969AE528BE2F91003A5C75 /* Home File */,
+				95969AD828BE2AD0003A5C75 /* Account Creation File */,
+				95969AD628BE2A7B003A5C75 /* Onboarding File */,
+				95A5507128BBA9A20032F3C8 /* Assets.xcassets */,
+				95A5507328BBA9A20032F3C8 /* Preview Content */,
+			);
+			path = "The Dermatologist";
+			sourceTree = "<group>";
+		};
+		95A5507328BBA9A20032F3C8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				95A5507428BBA9A20032F3C8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95A5506928BBA99F0032F3C8 /* The Dermatologist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A5507828BBA9A20032F3C8 /* Build configuration list for PBXNativeTarget "The Dermatologist" */;
+			buildPhases = (
+				95A5506628BBA99F0032F3C8 /* Sources */,
+				95A5506728BBA99F0032F3C8 /* Frameworks */,
+				95A5506828BBA99F0032F3C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Dermatologist";
+			productName = "The Dermatologist";
+			productReference = 95A5506A28BBA99F0032F3C8 /* The Dermatologist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95A5506228BBA99F0032F3C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					95A5506928BBA99F0032F3C8 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 95A5506528BBA99F0032F3C8 /* Build configuration list for PBXProject "The Dermatologist" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95A5506128BBA99F0032F3C8;
+			productRefGroup = 95A5506B28BBA99F0032F3C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95A5506928BBA99F0032F3C8 /* The Dermatologist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95A5506828BBA99F0032F3C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A5507528BBA9A20032F3C8 /* Preview Assets.xcassets in Resources */,
+				95969B0128BE50F7003A5C75 /* Rubik-Bold.ttf in Resources */,
+				95969AF928BE50A1003A5C75 /* Rubik-Light.ttf in Resources */,
+				95969B0328BE5103003A5C75 /* Rubik-Black.ttf in Resources */,
+				95969AFF28BE50C4003A5C75 /* Rubik-Medium.ttf in Resources */,
+				95969AFD28BE50B8003A5C75 /* Rubik-Regular.ttf in Resources */,
+				95A5507228BBA9A20032F3C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95A5506628BBA99F0032F3C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95969ADE28BE2C59003A5C75 /* CreateAccountView.swift in Sources */,
+				95969AEB28BE30A6003A5C75 /* SkinConditionView.swift in Sources */,
+				95969AED28BE3118003A5C75 /* SkinGuideView.swift in Sources */,
+				95969AF628BE3451003A5C75 /* ImagePicker.swift in Sources */,
+				95969ADC28BE2BCC003A5C75 /* SecureFieldView.swift in Sources */,
+				95969AD528BE22FD003A5C75 /* Onboarding.swift in Sources */,
+				95A5507028BBA99F0032F3C8 /* FirstView.swift in Sources */,
+				9505E70128BEB16F0089BC0A /* AllPharmaciesView.swift in Sources */,
+				95969AE728BE2FBB003A5C75 /* DoctorsInfoModel.swift in Sources */,
+				95969AF128BE3233003A5C75 /* ProfileView.swift in Sources */,
+				95969ADA28BE2B0E003A5C75 /* SignInView.swift in Sources */,
+				95969AE228BE2EC7003A5C75 /* HomeView.swift in Sources */,
+				95A5506E28BBA99F0032F3C8 /* The_DermatologistApp.swift in Sources */,
+				95969AE928BE3009003A5C75 /* DoctorInfoView.swift in Sources */,
+				95969AE428BE2F62003A5C75 /* SelectionBarView.swift in Sources */,
+				95969AE028BE2CBE003A5C75 /* AccountInfoView.swift in Sources */,
+				9505E6FB28BEA4600089BC0A /* CustomShapeView.swift in Sources */,
+				9505E6FF28BEAECD0089BC0A /* ImageModifier.swift in Sources */,
+				95969AEF28BE31F6003A5C75 /* NotificationsView.swift in Sources */,
+				95969AF328BE32A0003A5C75 /* CheckBoxView.swift in Sources */,
+				9505E6FD28BEAA580089BC0A /* AllDoctorsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95A5507628BBA9A20032F3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95A5507728BBA9A20032F3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95A5507928BBA9A20032F3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Dermatologist/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Dermatologist-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DhuhaEbrahim.The-Dermatologist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95A5507A28BBA9A20032F3C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"The Dermatologist/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The-Dermatologist-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DhuhaEbrahim.The-Dermatologist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95A5506528BBA99F0032F3C8 /* Build configuration list for PBXProject "The Dermatologist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A5507628BBA9A20032F3C8 /* Debug */,
+				95A5507728BBA9A20032F3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95A5507828BBA9A20032F3C8 /* Build configuration list for PBXNativeTarget "The Dermatologist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A5507928BBA9A20032F3C8 /* Debug */,
+				95A5507A28BBA9A20032F3C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95A5506228BBA99F0032F3C8 /* Project object */;
+}
