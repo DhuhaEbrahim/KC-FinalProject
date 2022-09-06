@@ -20,7 +20,6 @@
 		95969ADE28BE2C59003A5C75 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969ADD28BE2C59003A5C75 /* CreateAccountView.swift */; };
 		95969AE028BE2CBE003A5C75 /* AccountInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969ADF28BE2CBE003A5C75 /* AccountInfoView.swift */; };
 		95969AE228BE2EC7003A5C75 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE128BE2EC7003A5C75 /* HomeView.swift */; };
-		95969AE428BE2F62003A5C75 /* SelectionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE328BE2F62003A5C75 /* SelectionBarView.swift */; };
 		95969AE728BE2FBB003A5C75 /* DoctorsInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */; };
 		95969AE928BE3009003A5C75 /* DoctorInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AE828BE3009003A5C75 /* DoctorInfoView.swift */; };
 		95969AEB28BE30A6003A5C75 /* SkinConditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AEA28BE30A6003A5C75 /* SkinConditionView.swift */; };
@@ -56,7 +55,6 @@
 		95969ADD28BE2C59003A5C75 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		95969ADF28BE2CBE003A5C75 /* AccountInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoView.swift; sourceTree = "<group>"; };
 		95969AE128BE2EC7003A5C75 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		95969AE328BE2F62003A5C75 /* SelectionBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionBarView.swift; sourceTree = "<group>"; };
 		95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsInfoModel.swift; sourceTree = "<group>"; };
 		95969AE828BE3009003A5C75 /* DoctorInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorInfoView.swift; sourceTree = "<group>"; };
 		95969AEA28BE30A6003A5C75 /* SkinConditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinConditionView.swift; sourceTree = "<group>"; };
@@ -137,7 +135,6 @@
 				95969AE128BE2EC7003A5C75 /* HomeView.swift */,
 				9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */,
 				95C7849E28C2BBEA000BE690 /* AutoScrollView.swift */,
-				95969AE328BE2F62003A5C75 /* SelectionBarView.swift */,
 				95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */,
 			);
 			path = "Home File";
@@ -300,7 +297,6 @@
 				95969AE228BE2EC7003A5C75 /* HomeView.swift in Sources */,
 				95A5506E28BBA99F0032F3C8 /* The_DermatologistApp.swift in Sources */,
 				95969AE928BE3009003A5C75 /* DoctorInfoView.swift in Sources */,
-				95969AE428BE2F62003A5C75 /* SelectionBarView.swift in Sources */,
 				953F0EDD28C5223A0073C308 /* ComponentsView.swift in Sources */,
 				95969AE028BE2CBE003A5C75 /* AccountInfoView.swift in Sources */,
 				951DC9AA28C220E80077B774 /* SkinGuideModel.swift in Sources */,

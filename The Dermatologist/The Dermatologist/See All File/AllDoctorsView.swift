@@ -47,6 +47,7 @@ struct AllDoctorsView: View {
         .background(Color("Secondary"))
         
         
+        
     }
 }
 

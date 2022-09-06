@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FirstView: View {
     
-    @AppStorage("showOnboarding") var showOnboarding = true
+    @AppStorage("_showOnboarding") var showOnboarding = true
     
     var body: some View {
         

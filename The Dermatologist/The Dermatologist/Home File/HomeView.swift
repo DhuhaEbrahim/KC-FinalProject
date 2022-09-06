@@ -14,135 +14,154 @@ struct HomeView: View {
     
     var body: some View {
         
-        VStack(spacing: 40) {
-            HStack{
-                Text("Welcome \(name)")
-                    .font(.custom("Rubik-Regular", size: 30))
-                
-                Spacer()
-                
-                NavigationLink(destination: NotificationsView(doctors: DoctorsInfoModel(fullName: "Ahmad Hasan", workPlace: "Private clinic - Bella clinic", degree: "Completed Denver residency program and earned state mandated certifications. \n Master in Dermatology. \n University of DenverCity.")))
-                {
-                    Image(systemName: "bell.fill")
-                    .font(.system(size: 25))
-                    .frame(width: 50, height: 50)
-                    .background(Color("Primary"))
-                    .clipShape(Circle())
-                    
-                }
-                NavigationLink(destination: SkinGuideView()) {
-                    Image(systemName: "person.fill")
-                    .font(.system(size: 25))
-                    .frame(width: 50, height: 50)
-                    .background(Color("Primary"))
-                    .clipShape(Circle              ())
-                }
-                
-            }.padding()
-            
-            ScrollView(.vertical,showsIndicators: false) {
-                
-                AutoScrollView()
-                
-                Divider()
-                
+        ZStack {
+            VStack(spacing: 40) {
                 HStack{
-                    
-                Text("Dermatologists")
-                        .font(.custom("Rubik-Regular", size: 25))
+                    Text("Welcome \(name)")
+                        .font(.custom("Rubik-Regular", size: 30))
                     
                     Spacer()
                     
-                    NavigationLink(destination: AllDoctorsView()) {
-                        Text("See All")
-                            .font(.custom("Rubik-Regular", size: 17))
+                    NavigationLink(destination: NotificationsView(doctors: DoctorsInfoModel(fullName: "Dr. Ahmad Hasan", workPlace: "Private clinic - Bella clinic", degree: "Completed Denver residency program and earned state mandated certifications. \n Master in Dermatology. \n University of DenverCity.")))
+                    {
+                        Image(systemName: "bell.fill")
+                        .font(.system(size: 25))
+                        .frame(width: 50, height: 50)
+                        .background(Color("Primary"))
+                        .clipShape(Circle())
+                        
                     }
-                    Image(systemName: "chevron.right")
+                    NavigationLink(destination: ProfileView()) {
+                        Image(systemName: "person.fill")
+                        .font(.system(size: 25))
+                        .frame(width: 50, height: 50)
+                        .background(Color("Primary"))
+                        .clipShape(Circle              ())
+                    }
+                    
                 }.padding()
                 
-                ScrollView(.horizontal)
-                {
+                
+                // Scroll View
+                ScrollView(.vertical,showsIndicators: false) {
+                    
+                    // Ads Auto Scrolling
+                    AutoScrollView()
+                    
+                    Divider()
+                    
+                    
                     HStack {
-                        ForEach(doctorsInfo) {
-                            doctor in
-                            VStack {
-                                NavigationLink(destination: DoctorInfoView(personalInfo: doctor)) {
-                                    Image(doctor.fullName)
-                                        .resizable()
-                                        .modifier(ImageModifier())
-                                        
-                                        
-                                }
-                                
-                                Text(doctor.fullName).font(.custom("Rubik-Regular", size: 15))
-                            }
+                        
+                    Text("Dermatologists")
+                            .font(.custom("Rubik-Regular", size: 25))
+                        
+                        Spacer()
+                        
+                        // See All Dermatologists
+                        NavigationLink(destination: AllDoctorsView()) {
                             
+                            Text("See All")
+                                .font(.custom("Rubik-Regular", size: 17))
                         }
+                        Image(systemName: "chevron.right")
+                        
                     }.padding()
                     
-                }
-                
-                Divider()
-                
-                HStack {
-                    Text("Pharmacies")
-                        .font(.custom("Rubik-Regular", size: 25))
-                    Spacer()
-                    NavigationLink( destination: AllPharmaciesView() ){
-                        Text("See All")
-                            .font(.custom("Rubik-Regular", size: 17))
-                    }
-                    Image(systemName: "chevron.right")
-                }.padding()
-                
-                
-                ScrollView(.horizontal) {
                     
-                    HStack() {
-                        
-                        ForEach(pharmacies, id: \.self) {
-                            pharmacy in
-                            
-                            VStack {
+                    ScrollView(.horizontal)
+                    {
+                        HStack {
+                            ForEach(doctorsInfo) {
+                                doctor in
+                                VStack {
+                                    NavigationLink(destination: DoctorInfoView(personalInfo: doctor)) {
+                                        Image(doctor.fullName)
+                                            .resizable()
+                                            .modifier(ImageModifier())
+                                    }
+                                    
+                                    Text(doctor.fullName).font(.custom("Rubik-Regular", size: 15))
+                                }
                                 
-                                Image(pharmacy)
-                                    .resizable()
-                                    .modifier(ImageModifier())
-                                Text(pharmacy)
+                            }
+                        }.padding()
+                        
+                    }
+                    
+                    Divider()
+                    
+                    HStack {
+                        
+                        Text("Pharmacies")
+                            .font(.custom("Rubik-Regular", size: 25))
+                        
+                        Spacer()
+                        
+                        NavigationLink( destination: AllPharmaciesView()) {
+                            Text("See All")
+                                .font(.custom("Rubik-Regular", size: 17))
+                            
+                        }
+                        Image(systemName: "chevron.right")
+                        
+                    }.padding()
+                    
+                    
+                    ScrollView(.horizontal) {
+                        
+                        HStack() {
+                            
+                            ForEach(pharmacies, id: \.self) {
+                                pharmacy in
+                                
+                                VStack {
+                                    
+                                    Image(pharmacy)
+                                        .resizable()
+                                        .modifier(ImageModifier())
+                                    Text(pharmacy)
+                                }
                             }
                         }
                     }
-                }
-                
-            }
-                
-            HStack {
-                
-                NavigationLink(destination: SkinGuideView()) {
                     
-                            Image("Skin Guide")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 40, height: 40)
-                                .background(Color("Primary"))
-                                
-                                
                 }
-                Spacer()
-            }.padding()
                     
                
+                    
+                    
                 
                 
-            
-            
-            
-           
+                
+               
+            }
+            .navigationBarHidden(true)
+            .foregroundColor(Color("Dark"))
+            .background(Color("Secondary"))
+            .edgesIgnoringSafeArea([.bottom])
+        
+            VStack{
+                Spacer()
+               Spacer()
+                HStack {
+                    
+                    NavigationLink(destination: SkinGuideView()) {
+                        
+                                Image("Skin Guide")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+                                    .background(Color("Primary"))
+                                    
+                                    
+                    }
+                    
+                    Spacer()
+                }.padding()
+                    .ignoresSafeArea()
+            }
         }
-        .navigationBarHidden(true)
-        .foregroundColor(Color("Dark"))
-        .background(Color("Secondary"))
-        .edgesIgnoringSafeArea([.bottom])
 
 
         

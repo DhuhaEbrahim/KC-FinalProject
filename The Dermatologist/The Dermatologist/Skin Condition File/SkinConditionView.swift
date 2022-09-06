@@ -41,6 +41,7 @@ struct SkinConditionView: View {
     var body: some View {
         ZStack {
             Color("Secondary").ignoresSafeArea()
+            
             ScrollView{
                 
                 VStack{
@@ -70,6 +71,7 @@ struct SkinConditionView: View {
                     
                     // Describe Condition
                     HStack{
+                        
                         circleView()
                         Text("Describe your condition :")
                         Spacer()
@@ -81,9 +83,10 @@ struct SkinConditionView: View {
                         .border(Color("Primary"), width: 3)
                     
                     
-                    VStack{
+                    VStack {
                         
-                        HStack{
+                        HStack {
+                            
                             circleView()
                             Text("Complete the following information :")
                             Spacer()
@@ -91,27 +94,37 @@ struct SkinConditionView: View {
                         
                         //Gender Picker
                         HStack {
+                            
                             Text("Gender")
+                            
                             Spacer()
+                            
                             Picker(selection: $genderIndex, label: Text("Select Gender")) {
                                 Text("male").tag(0)
                                 Text("female").tag(1)
                             }.pickerStyle(SegmentedPickerStyle()).frame(width: 200, height: 30)
+                            
                         }.padding()
                         
                         // Age
                         HStack {
+                            
                             Text("Age")
+                            
                             Spacer()
+                            
                             TextField("ex: 23" , text: $age).padding()
                                 .frame(width: 150, height: 40)
                                 .border(Color("Primary"), width: 3)
+                            
                         }.padding()
                         
                         // Duration Picker
                         HStack {
                             Text("How long have you had this condition?")
+                            
                             Spacer()
+                            
                             Picker("Please choose", selection: $selectedDuration) {
                                 ForEach(duration, id: \.self) {
                                     Text($0)
@@ -130,9 +143,11 @@ struct SkinConditionView: View {
                             circleView()
                             Text("If you have any food or drug allergies please let us know :")
                                 .padding(.top)
+                            
                             Spacer()
                             
                         }.padding()
+                        
                         TextField("type here", text: $allergy)
                             .padding()
                             .frame(width: 370, height: 50)

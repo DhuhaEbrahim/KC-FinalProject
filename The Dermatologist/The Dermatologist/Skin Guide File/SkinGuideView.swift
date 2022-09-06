@@ -9,39 +9,49 @@ import SwiftUI
 
 struct SkinGuideView: View {
     
-  @State var searchText = ""
+    @State var searchText = ""
     @State var isSearching = false
     
     var body: some View {
         
+        // Background Color
         ZStack {
             Color("Secondary").ignoresSafeArea()
-    
+            
             VStack(alignment: .leading) {
+                
                 Text("Skin Guide")
                     .padding()
                     .foregroundColor(Color("Dark"))
                     .font(.custom("Rubik-Medium", size: 30))
-                HStack{
+                
+                
+                // Search Bar
+                HStack {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(Color("Dark"))
                     
-               TextField("Search...", text: $searchText)
-                    .onTapGesture(perform: { isSearching = true })
-                
+                    TextField("Search...", text: $searchText)
+                        .onTapGesture(perform: { isSearching = true })
+                    
+                    
+                    // Show X Button And Clear Sreach Bar
                     HStack{
-                   
-                    if isSearching {
-                        Button(action: {searchText = ""}, label: {
-                            Image(systemName: "xmark.circle.fill").foregroundColor(Color("Dark"))
-                        })
+                        
+                        if isSearching {
+                            Button(action: {searchText = ""}, label: {
+                                Image(systemName: "xmark.circle.fill").foregroundColor(Color("Dark"))
+                            })
+                        }
+                        
                     }
-                
-                }
                 }.padding()
                     .background(Color("Primary"))
                     .cornerRadius(10)
                     .padding()
+                
+                
+                // Skin Disorders List
                 List{
                     
                     ForEach(diseases.filter({"\($0)".contains(searchText) || searchText.isEmpty})
@@ -54,7 +64,7 @@ struct SkinGuideView: View {
                         }
                         
                     }.listRowBackground(Color("Secondary"))
-                        
+                    
                     
                     
                     
@@ -71,23 +81,3 @@ struct SkinGuideView_Previews: PreviewProvider {
     }
 }
 
-struct searchBarView: View {
-    
-    @Binding var searchText: String
-    
-    var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(Color("lightPink"))
-            HStack {
-                Image(systemName:
-                        "magnifyingglass")
-                TextField("Search...", text: $searchText)
-            }.foregroundColor(.gray)
-                .padding(.leading, 13)
-        }
-        . frame (height: 40)
-        .cornerRadius(13)
-        .padding()
-    }
-}

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CreateAccountView: View {
     
-    @State var fullName = ""
+    @State var userName = ""
     @State var email = ""
     @State var password = ""
     @State var confirmPassword = ""
@@ -30,7 +30,7 @@ struct CreateAccountView: View {
                 Spacer()
                 
                 
-                accountInfoView(userInfo: "Full name", userInfoBinding: $fullName)
+                accountInfoView(userInfo: "Full name", userInfoBinding: $userName)
                 
                 accountInfoView(userInfo: "Email", userInfoBinding: $email)
                 
@@ -72,7 +72,7 @@ struct CreateAccountView: View {
                     HStack{
                         
                         Spacer()
-                        NavigationLink(destination: HomeView(name: fullName).navigationBarBackButtonHidden(true), isActive: $iscreated)  {EmptyView()}
+                        NavigationLink(destination: HomeView(name: userName).navigationBarBackButtonHidden(true), isActive: $iscreated)  {EmptyView()}
                         
                         
                         Button("Create Account") {
@@ -82,7 +82,7 @@ struct CreateAccountView: View {
                                 alert = "Please make sure to enter the same password"
                             }
                             
-                            else if fullName == "" || email == "" || password == "" || confirmPassword == "" {
+                            else if userName == "" || email == "" || password == "" || confirmPassword == "" {
                                 alertSign = "exclamationmark.circle.fill"
                                 alert = " Please enter all you information"
                                 

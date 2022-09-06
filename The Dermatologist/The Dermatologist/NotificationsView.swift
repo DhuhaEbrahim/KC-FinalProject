@@ -9,21 +9,25 @@ import SwiftUI
 
 struct NotificationsView: View {
     
-    @State var notification = false
+   
     var doctors : DoctorsInfoModel
     
     var body: some View {
         
         
         ZStack{
-            Color("Secondary").ignoresSafeArea()
+            Color("Secondary")
+                .ignoresSafeArea()
             
             VStack{
                 
         HStack{
-            Image(doctors.fullName).resizable().frame(width: 100, height: 90).clipShape(Circle())
+            Image(doctors.fullName)
+                .resizable()
+                .frame(width: 100, height: 90)
+                .clipShape(Circle())
     
-            Text(doctors.fullName).foregroundColor(Color("Dark")).fontWeight(.heavy)
+            Text(doctors.fullName).foregroundColor(Color("Dark")).font(.custom("Rubik-Medium", size: 20))
             Spacer()
             Text("1")
                 
@@ -43,6 +47,6 @@ struct NotificationsView: View {
 
 struct NotificationsView_Previews: PreviewProvider {
     static var previews: some View {
-        NotificationsView(doctors: DoctorsInfoModel(fullName: "Dr. Ahmad Hasan", workPlace: "Private Clinic", degree: "canada"))
+        NotificationsView(doctors: DoctorsInfoModel(fullName: "Dr. Ahmad Hasan", workPlace: "Private Clinic - Bella clinic", degree: "Completed Denver residency program and earned state mandated certifications \n Master in Dermatology \n University of DenverCity"))
     }
 }
