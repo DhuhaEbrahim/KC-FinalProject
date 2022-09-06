@@ -24,8 +24,9 @@ struct ProfileView: View {
     @State private var birthdate = Date()
     @State var isPublic: Bool = true
     @State private var showingAlert = false
+    
     init(){
-            UITableView.appearance().backgroundColor = .clear
+        UITableView.appearance().backgroundColor = .clear
         }
         
     var body: some View {

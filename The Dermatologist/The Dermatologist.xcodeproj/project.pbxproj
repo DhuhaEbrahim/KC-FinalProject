@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9505E6FB28BEA4600089BC0A /* CustomShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E6FA28BEA4600089BC0A /* CustomShapeView.swift */; };
 		9505E6FD28BEAA580089BC0A /* AllDoctorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */; };
 		9505E6FF28BEAECD0089BC0A /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */; };
 		9505E70128BEB16F0089BC0A /* AllPharmaciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */; };
+		951DC9AA28C220E80077B774 /* SkinGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951DC9A928C220E80077B774 /* SkinGuideModel.swift */; };
+		951DC9AD28C224E20077B774 /* SkinDiseasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951DC9AC28C224E20077B774 /* SkinDiseasesView.swift */; };
+		953F0EDD28C5223A0073C308 /* ComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F0EDC28C5223A0073C308 /* ComponentsView.swift */; };
+		953F0EE228C53E780073C308 /* ImagesModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F0EE128C53E780073C308 /* ImagesModifier.swift */; };
 		95969AD528BE22FD003A5C75 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AD428BE22FD003A5C75 /* Onboarding.swift */; };
 		95969ADA28BE2B0E003A5C75 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969AD928BE2B0E003A5C75 /* SignInView.swift */; };
 		95969ADC28BE2BCC003A5C75 /* SecureFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95969ADB28BE2BCC003A5C75 /* SecureFieldView.swift */; };
@@ -35,14 +38,18 @@
 		95A5507028BBA99F0032F3C8 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A5506F28BBA99F0032F3C8 /* FirstView.swift */; };
 		95A5507228BBA9A20032F3C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A5507128BBA9A20032F3C8 /* Assets.xcassets */; };
 		95A5507528BBA9A20032F3C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A5507428BBA9A20032F3C8 /* Preview Assets.xcassets */; };
+		95C7849F28C2BBEA000BE690 /* AutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C7849E28C2BBEA000BE690 /* AutoScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9505E6FA28BEA4600089BC0A /* CustomShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShapeView.swift; sourceTree = "<group>"; };
 		9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDoctorsView.swift; sourceTree = "<group>"; };
 		9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModifier.swift; sourceTree = "<group>"; };
 		9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPharmaciesView.swift; sourceTree = "<group>"; };
+		951DC9A928C220E80077B774 /* SkinGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinGuideModel.swift; sourceTree = "<group>"; };
+		951DC9AC28C224E20077B774 /* SkinDiseasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkinDiseasesView.swift; sourceTree = "<group>"; };
 		9527851028BF8539000DE649 /* The-Dermatologist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "The-Dermatologist-Info.plist"; sourceTree = SOURCE_ROOT; };
+		953F0EDC28C5223A0073C308 /* ComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsView.swift; sourceTree = "<group>"; };
+		953F0EE128C53E780073C308 /* ImagesModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesModifier.swift; sourceTree = "<group>"; };
 		95969AD428BE22FD003A5C75 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		95969AD928BE2B0E003A5C75 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		95969ADB28BE2BCC003A5C75 /* SecureFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureFieldView.swift; sourceTree = "<group>"; };
@@ -68,6 +75,7 @@
 		95A5506F28BBA99F0032F3C8 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		95A5507128BBA9A20032F3C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A5507428BBA9A20032F3C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95C7849E28C2BBEA000BE690 /* AutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +89,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		95969AD628BE2A7B003A5C75 /* Onboarding File */ = {
+		951DC9AB28C223350077B774 /* Skin Guide File */ = {
+			isa = PBXGroup;
+			children = (
+				95969AEC28BE3118003A5C75 /* SkinGuideView.swift */,
+				951DC9AC28C224E20077B774 /* SkinDiseasesView.swift */,
+				951DC9A928C220E80077B774 /* SkinGuideModel.swift */,
+			);
+			path = "Skin Guide File";
+			sourceTree = "<group>";
+		};
+		953F0EE028C53D850073C308 /* See All File */ = {
+			isa = PBXGroup;
+			children = (
+				9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */,
+				953F0EE128C53E780073C308 /* ImagesModifier.swift */,
+				9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */,
+			);
+			path = "See All File";
+			sourceTree = "<group>";
+		};
+		95969AD628BE2A7B003A5C75 /* Starting File */ = {
 			isa = PBXGroup;
 			children = (
 				95A5506F28BBA99F0032F3C8 /* FirstView.swift */,
 				95969AD428BE22FD003A5C75 /* Onboarding.swift */,
+				953F0EDC28C5223A0073C308 /* ComponentsView.swift */,
 			);
-			path = "Onboarding File";
+			path = "Starting File";
 			sourceTree = "<group>";
 		};
 		95969AD828BE2AD0003A5C75 /* Account Creation File */ = {
@@ -107,6 +136,7 @@
 			children = (
 				95969AE128BE2EC7003A5C75 /* HomeView.swift */,
 				9505E6FE28BEAECD0089BC0A /* ImageModifier.swift */,
+				95C7849E28C2BBEA000BE690 /* AutoScrollView.swift */,
 				95969AE328BE2F62003A5C75 /* SelectionBarView.swift */,
 				95969AE628BE2FBB003A5C75 /* DoctorsInfoModel.swift */,
 			);
@@ -156,17 +186,15 @@
 				9527851028BF8539000DE649 /* The-Dermatologist-Info.plist */,
 				95969AF728BE507E003A5C75 /* Rubik Font */,
 				95A5506D28BBA99F0032F3C8 /* The_DermatologistApp.swift */,
-				9505E6FC28BEAA580089BC0A /* AllDoctorsView.swift */,
-				9505E70028BEB16F0089BC0A /* AllPharmaciesView.swift */,
+				953F0EE028C53D850073C308 /* See All File */,
 				95969AE828BE3009003A5C75 /* DoctorInfoView.swift */,
-				9505E6FA28BEA4600089BC0A /* CustomShapeView.swift */,
 				95969AF028BE3233003A5C75 /* ProfileView.swift */,
-				95969AEC28BE3118003A5C75 /* SkinGuideView.swift */,
+				951DC9AB28C223350077B774 /* Skin Guide File */,
 				95969AEE28BE31F6003A5C75 /* NotificationsView.swift */,
 				95969AF428BE3412003A5C75 /* Skin Condition File */,
 				95969AE528BE2F91003A5C75 /* Home File */,
 				95969AD828BE2AD0003A5C75 /* Account Creation File */,
-				95969AD628BE2A7B003A5C75 /* Onboarding File */,
+				95969AD628BE2A7B003A5C75 /* Starting File */,
 				95A5507128BBA9A20032F3C8 /* Assets.xcassets */,
 				95A5507328BBA9A20032F3C8 /* Preview Content */,
 			);
@@ -256,11 +284,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				951DC9AD28C224E20077B774 /* SkinDiseasesView.swift in Sources */,
 				95969ADE28BE2C59003A5C75 /* CreateAccountView.swift in Sources */,
 				95969AEB28BE30A6003A5C75 /* SkinConditionView.swift in Sources */,
 				95969AED28BE3118003A5C75 /* SkinGuideView.swift in Sources */,
 				95969AF628BE3451003A5C75 /* ImagePicker.swift in Sources */,
 				95969ADC28BE2BCC003A5C75 /* SecureFieldView.swift in Sources */,
+				953F0EE228C53E780073C308 /* ImagesModifier.swift in Sources */,
 				95969AD528BE22FD003A5C75 /* Onboarding.swift in Sources */,
 				95A5507028BBA99F0032F3C8 /* FirstView.swift in Sources */,
 				9505E70128BEB16F0089BC0A /* AllPharmaciesView.swift in Sources */,
@@ -271,11 +301,13 @@
 				95A5506E28BBA99F0032F3C8 /* The_DermatologistApp.swift in Sources */,
 				95969AE928BE3009003A5C75 /* DoctorInfoView.swift in Sources */,
 				95969AE428BE2F62003A5C75 /* SelectionBarView.swift in Sources */,
+				953F0EDD28C5223A0073C308 /* ComponentsView.swift in Sources */,
 				95969AE028BE2CBE003A5C75 /* AccountInfoView.swift in Sources */,
-				9505E6FB28BEA4600089BC0A /* CustomShapeView.swift in Sources */,
+				951DC9AA28C220E80077B774 /* SkinGuideModel.swift in Sources */,
 				9505E6FF28BEAECD0089BC0A /* ImageModifier.swift in Sources */,
 				95969AEF28BE31F6003A5C75 /* NotificationsView.swift in Sources */,
 				95969AF328BE32A0003A5C75 /* CheckBoxView.swift in Sources */,
+				95C7849F28C2BBEA000BE690 /* AutoScrollView.swift in Sources */,
 				9505E6FD28BEAA580089BC0A /* AllDoctorsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

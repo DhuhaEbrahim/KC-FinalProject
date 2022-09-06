@@ -130,6 +130,7 @@ struct SkinConditionView: View {
                             circleView()
                             Text("If you have any food or drug allergies please let us know :")
                                 .padding(.top)
+                            Spacer()
                             
                         }.padding()
                         TextField("type here", text: $allergy)
@@ -138,9 +139,10 @@ struct SkinConditionView: View {
                             .border(Color("Primary"), width: 3)
                     }
                     
-                  Spacer()
+                
                     
                     
+                    Spacer(minLength: 50)
                     // Send Button
                     Button("submit and send") {
                         showingAlert = true

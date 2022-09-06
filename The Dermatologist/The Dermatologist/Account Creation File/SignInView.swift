@@ -9,12 +9,12 @@ import SwiftUI
 
 struct SignInView: View {
     
-    @State var email:String = ""
-    @State var password:String = ""
-    @State var issecureField: Bool = true
+    @State var email = ""
+    @State var password = ""
+    @State var issecureField = true
     @State private var isSignedIn = false
-    @State var alert: String = ""
-    
+    @State var alert = ""
+    @State var alertSign = ""
     
     var body: some View {
         
@@ -39,9 +39,11 @@ struct SignInView: View {
                 
             SecureFieldView(issecureField: $issecureField, password: $password)
             
-            
-            Text("\(alert)")
-           
+                HStack{
+                    Image(systemName: alertSign)
+                    Text("\(alert)")
+                        .font(.custom("Rubik-Light", size: 20))
+                }
                
                 NavigationLink(destination: HomeView(name: "dhuha")
                     .navigationBarBackButtonHidden(true), isActive: $isSignedIn)  {EmptyView()}
@@ -52,13 +54,15 @@ struct SignInView: View {
             // Next Button
             Button("Next") {
                
-                if email == "Dhuha.ebrahim" && password == "12345" {
+                if email == "Dhuha.ebrahim@gmail.com" && password == "12345" {
                     isSignedIn = true
                     
                 } else if email == ""  || password == "" {
+                    alertSign = "exclamationmark.circle.fill"
                     alert = "please enter your email and password"}
                
                 else {
+                    alertSign = "exclamationmark.circle.fill"
                    alert = "your email or password is wrong"
                 }
             }

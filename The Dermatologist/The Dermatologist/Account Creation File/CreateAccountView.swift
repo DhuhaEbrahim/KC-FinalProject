@@ -17,6 +17,7 @@ struct CreateAccountView: View {
     @State var iscreated = false
     @State var secureField = true
     @State var ischecked = false
+    @State var alertSign = ""
     
     var body: some View {
         
@@ -43,16 +44,21 @@ struct CreateAccountView: View {
                
                 VStack{
                     Spacer()
-                    Text(alert).font(.custom("Rubik-Light", size: 20))
+                    HStack {
+                        Image(systemName: alertSign)
+                        Text(alert)
+                            .font(.custom("Rubik-Light", size: 20))
+                    }
                     Spacer()
                     
                     HStack {
                         
                         
                         HStack {
-                            Text("Agree to our").font(.custom("Rubik-Regular", size: 20))
+                            Text("Agree to our")
+                                .font(.custom("Rubik-Regular", size: 20))
                             // Link
-                            Link("terms of Service ?", destination: URL(string: "https://www.example.com/TOS.html")!).font(.custom("Rubik-Medium", size: 20))
+                            Link("terms of service ?", destination: URL(string: "https://www.example.com/TOS.html")!).font(.custom("Rubik-Medium", size: 20))
                         }
                         
                         
@@ -72,13 +78,16 @@ struct CreateAccountView: View {
                         Button("Create Account") {
                             
                             if password != confirmPassword {
+                                alertSign = "exclamationmark.circle.fill"
                                 alert = "Please make sure to enter the same password"
                             }
                             
                             else if fullName == "" || email == "" || password == "" || confirmPassword == "" {
+                                alertSign = "exclamationmark.circle.fill"
                                 alert = " Please enter all you information"
                                 
                             } else if ischecked != true {
+                                alertSign = "exclamationmark.circle.fill"
                                 alert = "please agree to our terms and conditions"
                             }
                             

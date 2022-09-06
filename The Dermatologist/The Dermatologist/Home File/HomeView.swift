@@ -14,28 +14,46 @@ struct HomeView: View {
     
     var body: some View {
         
-        VStack(spacing: 40){
+        VStack(spacing: 40) {
             HStack{
-                Text("welcome \(name)")
+                Text("Welcome \(name)")
                     .font(.custom("Rubik-Regular", size: 30))
                 
                 Spacer()
                 
-                NavigationLink(destination: NotificationsView(doctors: DoctorsInfoModel(fullName: "Ahmad Hasan", workPlace: "Pravate clinic", degree: "canada")))
+                NavigationLink(destination: NotificationsView(doctors: DoctorsInfoModel(fullName: "Ahmad Hasan", workPlace: "Private clinic - Bella clinic", degree: "Completed Denver residency program and earned state mandated certifications. \n Master in Dermatology. \n University of DenverCity.")))
                 {
+                    Image(systemName: "bell.fill")
+                    .font(.system(size: 25))
+                    .frame(width: 50, height: 50)
+                    .background(Color("Primary"))
+                    .clipShape(Circle())
                     
-                    Image(systemName: "bell").font(.system(size: 30))
+                }
+                NavigationLink(destination: SkinGuideView()) {
+                    Image(systemName: "person.fill")
+                    .font(.system(size: 25))
+                    .frame(width: 50, height: 50)
+                    .background(Color("Primary"))
+                    .clipShape(Circle              ())
                 }
                 
             }.padding()
-            ScrollView{
+            
+            ScrollView(.vertical,showsIndicators: false) {
+                
+                AutoScrollView()
+                
+                Divider()
+                
                 HStack{
+                    
                 Text("Dermatologists")
                         .font(.custom("Rubik-Regular", size: 25))
                     
                     Spacer()
                     
-                    NavigationLink( destination: AllDoctorsView() ){
+                    NavigationLink(destination: AllDoctorsView()) {
                         Text("See All")
                             .font(.custom("Rubik-Regular", size: 17))
                     }
@@ -44,15 +62,15 @@ struct HomeView: View {
                 
                 ScrollView(.horizontal)
                 {
-                    HStack{
-                        ForEach(doctorsInfo){
+                    HStack {
+                        ForEach(doctorsInfo) {
                             doctor in
-                            VStack{
+                            VStack {
                                 NavigationLink(destination: DoctorInfoView(personalInfo: doctor)) {
                                     Image(doctor.fullName)
                                         .resizable()
-                                        
                                         .modifier(ImageModifier())
+                                        
                                         
                                 }
                                 
@@ -60,14 +78,14 @@ struct HomeView: View {
                             }
                             
                         }
-                    }
+                    }.padding()
                     
                 }
                 
                 Divider()
                 
-                HStack{
-                Text("Pharmacies")
+                HStack {
+                    Text("Pharmacies")
                         .font(.custom("Rubik-Regular", size: 25))
                     Spacer()
                     NavigationLink( destination: AllPharmaciesView() ){
@@ -76,11 +94,17 @@ struct HomeView: View {
                     }
                     Image(systemName: "chevron.right")
                 }.padding()
-                ScrollView(.horizontal){
-                    HStack{
-                        ForEach(pharmacies, id: \.self){
+                
+                
+                ScrollView(.horizontal) {
+                    
+                    HStack() {
+                        
+                        ForEach(pharmacies, id: \.self) {
                             pharmacy in
-                            VStack{
+                            
+                            VStack {
+                                
                                 Image(pharmacy)
                                     .resizable()
                                     .modifier(ImageModifier())
@@ -90,20 +114,37 @@ struct HomeView: View {
                     }
                 }
                 
-                
-                
-                
-                
-                
-                
             }
+                
+            HStack {
+                
+                NavigationLink(destination: SkinGuideView()) {
+                    
+                            Image("Skin Guide")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 40, height: 40)
+                                .background(Color("Primary"))
+                                
+                                
+                }
+                Spacer()
+            }.padding()
+                    
+               
+                
+                
             
-           SelectionBarView()
+            
+            
            
         }
         .navigationBarHidden(true)
         .foregroundColor(Color("Dark"))
         .background(Color("Secondary"))
+        .edgesIgnoringSafeArea([.bottom])
+
+
         
     }
 }
@@ -111,5 +152,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView(name: "dhuha")
+            .previewDevice("iPhone 12")
     }
 }
+

@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct NotificationsView: View {
+    
     @State var notification = false
     var doctors : DoctorsInfoModel
+    
     var body: some View {
+        
+        
         ZStack{
             Color("Secondary").ignoresSafeArea()
+            
             VStack{
                 
         HStack{
@@ -38,6 +43,6 @@ struct NotificationsView: View {
 
 struct NotificationsView_Previews: PreviewProvider {
     static var previews: some View {
-        NotificationsView(doctors: DoctorsInfoModel(fullName: "Ahmad Hasan", workPlace: "Private Clinic", degree: "canada"))
+        NotificationsView(doctors: DoctorsInfoModel(fullName: "Dr. Ahmad Hasan", workPlace: "Private Clinic", degree: "canada"))
     }
 }

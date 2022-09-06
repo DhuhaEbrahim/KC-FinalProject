@@ -14,7 +14,13 @@ struct ImageModifier: ViewModifier {
             
             .frame(width: 200, height: 200)
             .border(Color("Dark"))
-            .clipShape(RoundedRectangle( cornerRadius: 15))
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+            .stroke(Color("Primary"), lineWidth: 5))
+            .cornerRadius(15)
+            .shadow(radius: 3)
+            
+            
            
     }
 }
