@@ -24,6 +24,10 @@ struct SkinGuideView: View {
                     .padding()
                     .foregroundColor(Color("Dark"))
                     .font(.custom("Rubik-Medium", size: 30))
+                Text("Learning about your skin disorder helps you deal with it ... \n That's why we provided you with a trusted skin guide !")
+                    .padding(.horizontal)
+                        .foregroundColor(Color("Dark"))
+                        .font(.custom("Rubik-Regular", size: 18))
                 
                 
                 // Search Bar

@@ -16,7 +16,7 @@ struct OnboardingView: View {
         
         TabView {
             
-            OnboardingPageView(imageName: "Onboarding1", width: 500, hight: 500, title: "Whats your skin concern ? \n Ask a dermatologist !", description: "Do you want to consult a dermatologist but all clinics are busy and crowded ? \n Don't worry...We got you", showsDissmisButton: false, showOnboarding: $showOnboarding)
+            OnboardingPageView(imageName: "Onboarding1", width: 500, hight: 500, title: "Have a skin concern? Ask a dermatologist", description: "Do you want to consult a dermatologist but all clinics are busy and crowded ? \n Don't worry...We got you", showsDissmisButton: false, showOnboarding: $showOnboarding)
             
             OnboardingPageView(imageName: "Onboarding2", width: 470, hight: 400, title: "Ask a Dermatologist in the comfort of your home", description: "Take a picture of your skin condition, fill the form and send it to your dermatologist of choice", showsDissmisButton: false, showOnboarding: $showOnboarding)
             
@@ -26,7 +26,6 @@ struct OnboardingView: View {
             
             
         }
-     //  .background(Color("Secondary"))
         .tabViewStyle(PageTabViewStyle())
     }
 }
@@ -52,6 +51,7 @@ struct OnboardingPageView: View {
                     .frame(width: width , height: hight)
                     
                 Text(title)
+                    .padding()
                     .font(.custom("Rubik-Medium", size: 30))
                     .foregroundColor(Color("Dark"))
                     .multilineTextAlignment(.center)
@@ -77,6 +77,7 @@ struct OnboardingPageView: View {
                             .font(.custom("Rubik-Medium", size: 25))
                             .background(Color("Primary"))
                             .clipShape(Capsule())
+                           
                     })
                 }
             }.padding()

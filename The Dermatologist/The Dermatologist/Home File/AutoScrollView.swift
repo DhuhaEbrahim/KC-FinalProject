@@ -20,7 +20,7 @@ struct AutoScrollView: View {
        
         VStack{
             HStack {
-                Text("Whats New")
+                Text("What's New")
                     .font(.custom("Rubik-Regular", size: 25))
                     .foregroundColor(Color("Dark"))
                 Spacer()

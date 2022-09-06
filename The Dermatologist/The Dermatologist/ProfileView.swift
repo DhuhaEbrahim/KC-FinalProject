@@ -26,8 +26,8 @@ struct ProfileView: View {
     
     init() {
         UITableView.appearance().backgroundColor = .clear
-        }
-        
+    }
+    
     var body: some View {
         
         Form(content: {
@@ -51,23 +51,14 @@ struct ProfileView: View {
             Section(header: Text("Settings")) {
                 
                 // Notificatios
-                HStack {
-                    Image(systemName: "bell.badge")
-                    Text("Notifications")
-                }
+                SettingsView(icon: "bell.badge", setting: "Notifications")
                 
                 // App Appearance
-                HStack {
-                    Image(systemName: "moon.fill")
-                    Text("App appearance")
-                }
+                SettingsView(icon: "moon.fill", setting: "App appearance")
                 
                 
                 // Sign Out
-                HStack {
-                    Image(systemName: "arrow.backward")
-                    Text("Sign out")
-                }
+                SettingsView(icon: "arrow.backward", setting: "Sign out")
                 
                 // Terms Of Service Agreement
                 Toggle(isOn: $isPublic, label: {
@@ -80,15 +71,16 @@ struct ProfileView: View {
                 })
                 
                 // Language Picker
-                HStack {
-                    Image(systemName: "globe")
-                    Picker("Language", selection: $language) {
+                HStack{
+                    SettingsView(icon: "globe", setting: "Language")
+                    Picker("", selection: $language) {
                         ForEach(Language.allCases) { language in
                             Text(language.rawValue.capitalized).tag(language)
                         }
                     }
                 }
             }
+            
             
             
             
@@ -123,6 +115,19 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         ProfileView()
-            .previewDevice("iPhone 13 Pro")
+            .previewDevice("iPhone 12 Pro")
+    }
+}
+
+struct SettingsView: View {
+    
+    var icon : String
+    var setting : String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: icon)
+            Text(setting)
+        }
     }
 }

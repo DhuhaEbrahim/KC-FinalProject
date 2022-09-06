@@ -15,6 +15,7 @@ struct SignInView: View {
     @State private var isSignedIn = false
     @State var alert = ""
     @State var alertSign = ""
+    @State var isAnimated = false
     
     var body: some View {
         
@@ -52,9 +53,12 @@ struct SignInView: View {
                     Spacer()
                     
             // Next Button
-            Button("Next") {
-               
+            Button {
+                
+                withAnimation(.easeInOut(duration: 1)) {
+                  
                 if email == "Dhuha.ebrahim@gmail.com" && password == "12345" {
+                   isAnimated.toggle()
                     isSignedIn = true
                     
                 } else if email == ""  || password == "" {
@@ -65,12 +69,20 @@ struct SignInView: View {
                     alertSign = "exclamationmark.circle.fill"
                    alert = "your email or password is wrong"
                 }
+                }
             }
-            .padding()
-            .frame(width: 200, height: 50)
-            .font(.custom("Rubik-Medium", size: 25))
-            .background(Color("Primary"))
-            .clipShape(RoundedRectangle(cornerRadius: 10))
+                label:{
+                    
+                    Text("Next")
+                        .padding()
+                        .frame(width: 200, height: 50)
+                        .font(.custom("Rubik-Medium", size: 25))
+                        .background(Color("Primary"))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .shadow(radius: 5)
+                        
+
+                }
             
                     Spacer()
                 }

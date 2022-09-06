@@ -101,6 +101,7 @@ struct CreateAccountView: View {
                         .font(.custom("Rubik-Medium", size: 20))
                         .background(Color("Primary"))
                         .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .shadow(radius: 5)
                         Spacer()
                     }
                 }

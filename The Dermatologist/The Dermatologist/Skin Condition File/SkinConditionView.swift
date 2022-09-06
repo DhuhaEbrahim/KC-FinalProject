@@ -33,7 +33,7 @@ struct SkinConditionView: View {
     
     // Age Text Field
     @State private var age = ""
-    
+    @State var isAnimated = false
     // Duration Picker
     var duration = ["Days", "Weeks", "Months", "Years"]
     @State private var selectedDuration = "Days"
@@ -154,10 +154,8 @@ struct SkinConditionView: View {
                             .border(Color("Primary"), width: 3)
                     }
                     
-                
-                    
-                    
                     Spacer(minLength: 50)
+                    
                     // Send Button
                     Button("submit and send") {
                         showingAlert = true

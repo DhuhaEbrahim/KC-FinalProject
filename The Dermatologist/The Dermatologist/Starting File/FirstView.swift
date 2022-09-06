@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct FirstView: View {
+   
+    // To Show Oboarding Only Once
+  @AppStorage("_showOnboarding") var showOnboarding = true
     
-    @AppStorage("_showOnboarding") var showOnboarding = true
-    
+    @State var isAnimatedOne = false
+    @State var isAnimatedTwo = false
     var body: some View {
         
         
@@ -27,19 +30,23 @@ struct FirstView: View {
                     Text("Welcome to \n The Dermatologist")
                         .font(.custom("Rubik-Bold", size: 30))
                         .multilineTextAlignment(.center)
-                    
+                    Spacer()
+                    Image("logo")
+                        .resizable()
+                        .frame(width: 250, height: 250)
+                        
                     Spacer()
                     
-                    // Log In Navigation Button
-                    NavigationLink(destination: SignInView()) {
+                    // Sign In Navigation Button
+                    NavigationLink(destination: SignInView(), isActive: $isAnimatedOne) {
                         
-                        ComponentsView(title: "Sign in")
+                        ComponentsView(title: "Sign in", isAnimated: $isAnimatedOne)
                     }
                     
                     // Creat Account Navigation Button
-                    NavigationLink(destination: CreateAccountView()) {
+                    NavigationLink(destination: CreateAccountView(), isActive: $isAnimatedTwo) {
                         
-                        ComponentsView(title: "Creat an account")
+                        ComponentsView(title: "Creat an account", isAnimated: $isAnimatedTwo)
                         
                     }
                     
@@ -60,6 +67,6 @@ struct FirstView: View {
 struct FirstView_Previews: PreviewProvider {
     static var previews: some View {
         FirstView()
-            .previewDevice("iPhone 13")
+            .previewDevice("iPhone 12 Pro")
     }
 }

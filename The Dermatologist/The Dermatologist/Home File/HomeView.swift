@@ -11,7 +11,7 @@ struct HomeView: View {
     
     let name : String
     var pharmacies = ["Pharmazone", "Aldawaeyaa", "Alhajery", "Almutawaa", "Boots", "Royal"]
-    
+    private let width: CGFloat = 200
     var body: some View {
         
         ZStack {
@@ -139,28 +139,10 @@ struct HomeView: View {
             .navigationBarHidden(true)
             .foregroundColor(Color("Dark"))
             .background(Color("Secondary"))
-            .edgesIgnoringSafeArea([.bottom])
+           
         
-            VStack{
-                Spacer()
-               Spacer()
-                HStack {
-                    
-                    NavigationLink(destination: SkinGuideView()) {
-                        
-                                Image("Skin Guide")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 40, height: 40)
-                                    .background(Color("Primary"))
-                                    
-                                    
-                    }
-                    
-                    Spacer()
-                }.padding()
-                    .ignoresSafeArea()
-            }
+            
+           SkinGuideIconView()
         }
 
 
