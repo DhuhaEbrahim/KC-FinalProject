@@ -46,6 +46,13 @@ struct OnboardingPageView: View {
             
             VStack{
                 
+                HStack {
+                    Spacer()
+                    Text("Swipe")
+                    Image(systemName: "arrow.forward")
+                }.padding()
+                
+                
                 Image(imageName)
                     .resizable()
                     .frame(width: width , height: hight)
@@ -80,6 +87,9 @@ struct OnboardingPageView: View {
                            
                     })
                 }
+                
+               
+                
             }.padding()
         }
     }
