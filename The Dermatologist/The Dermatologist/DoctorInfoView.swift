@@ -10,7 +10,6 @@ import SwiftUI
 struct DoctorInfoView: View {
     
     var personalInfo : DoctorsInfoModel
-    @State var isAnimated = false
     
     var body: some View {
         
@@ -38,29 +37,19 @@ struct DoctorInfoView: View {
                         
                         Spacer()
                         
-                        NavigationLink(destination: SkinConditionView(), isActive: $isAnimated) {
-                            Text("Start online consultation")
-                                .padding()
-                                .font(.custom("Rubik-Medium", size: 20))
-                                .frame(width: 300, height: 50)
-                                .background(Color("Primary"))
-                                .cornerRadius(15)
-                                .shadow(radius: 5)
-                                .opacity(isAnimated ? 2.0 : 1.0)
-                                .scaleEffect(isAnimated ? 1.5 : 1.0)
-                                .onTapGesture {
-                                    isAnimated = true
-                                }
-                                .pressEvents {
-                                    // On press
-                                    withAnimation(.easeInOut(duration: 0.1)) {
-                                        isAnimated = true
-                                    }
-                                } onRelease: {
-                                    withAnimation {
-                                        isAnimated = false
-                                    }
-                                }
+                        NavigationLink(destination: SkinConditionView()) {
+                            
+                            withAnimation(.easeInOut(duration: 1)) {
+                                
+                                Text("Start online consultation")
+                                    .padding()
+                                    .font(.custom("Rubik-Medium", size: 20))
+                                    .frame(width: 300, height: 50)
+                                    .background(Color("Primary"))
+                                    .cornerRadius(15)
+                                    .shadow(radius: 5)}
+                            
+                            
                         }
                         
                         
@@ -68,6 +57,9 @@ struct DoctorInfoView: View {
                         
                         Spacer()
                     }
+                    
+                    
+                    
                     HStack {
                         Spacer()
                         Text("Book an appointment")
@@ -78,7 +70,7 @@ struct DoctorInfoView: View {
                             .cornerRadius(15)
                             .shadow(radius: 5)
                         Spacer()
-                    }
+                    }.padding()
                     
                     
                     

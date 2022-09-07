@@ -15,7 +15,6 @@ struct SignInView: View {
     @State private var isSignedIn = false
     @State var alert = ""
     @State var alertSign = ""
-    @State var isAnimated = false
     
     var body: some View {
         
@@ -58,7 +57,6 @@ struct SignInView: View {
                 withAnimation(.easeInOut(duration: 1)) {
                   
                 if email == "Dhuha.ebrahim@gmail.com" && password == "12345" {
-                   isAnimated.toggle()
                     isSignedIn = true
                     
                 } else if email == ""  || password == "" {
@@ -72,7 +70,7 @@ struct SignInView: View {
                 }
             }
                 label:{
-                    
+                    withAnimation(.easeInOut(duration: 1)) {
                     Text("Next")
                         .padding()
                         .frame(width: 200, height: 50)
@@ -80,7 +78,7 @@ struct SignInView: View {
                         .background(Color("Primary"))
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .shadow(radius: 5)
-                        
+                    }
 
                 }
             
@@ -89,7 +87,8 @@ struct SignInView: View {
         }
             .padding()
         
-        }.foregroundColor(Color("Dark"))
+        }
+        .foregroundColor(Color("Dark"))
             
            
     

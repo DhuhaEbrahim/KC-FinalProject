@@ -12,8 +12,7 @@ struct FirstView: View {
     // To Show Oboarding Only Once
   @AppStorage("_showOnboarding") var showOnboarding = true
     
-    @State var isAnimatedOne = false
-    @State var isAnimatedTwo = false
+   
     var body: some View {
         
         
@@ -38,16 +37,17 @@ struct FirstView: View {
                     Spacer()
                     
                     // Sign In Navigation Button
-                    NavigationLink(destination: SignInView(), isActive: $isAnimatedOne) {
-                        
-                        ComponentsView(title: "Sign in", isAnimated: $isAnimatedOne)
+                    NavigationLink(destination: SignInView()) {
+                        withAnimation(.easeInOut(duration: 1)) {
+                        ComponentsView(title: "Sign in")
+                        }
                     }
                     
                     // Creat Account Navigation Button
-                    NavigationLink(destination: CreateAccountView(), isActive: $isAnimatedTwo) {
-                        
-                        ComponentsView(title: "Creat an account", isAnimated: $isAnimatedTwo)
-                        
+                    NavigationLink(destination: CreateAccountView()) {
+                        withAnimation(.easeInOut(duration: 1)) {
+                        ComponentsView(title: "Creat an account")
+                        }
                     }
                     
                 }

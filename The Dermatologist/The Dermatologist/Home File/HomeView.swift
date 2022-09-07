@@ -12,6 +12,7 @@ struct HomeView: View {
     let name : String
     var pharmacies = ["Pharmazone", "Aldawaeyaa", "Alhajery", "Almutawaa", "Boots", "Royal"]
     private let width: CGFloat = 200
+    
     var body: some View {
         
         ZStack {
@@ -53,7 +54,7 @@ struct HomeView: View {
                     
                     HStack {
                         
-                    Text("Dermatologists")
+                        Text("Dermatologists")
                             .font(.custom("Rubik-Regular", size: 25))
                         
                         Spacer()
@@ -110,7 +111,7 @@ struct HomeView: View {
                     
                     ScrollView(.horizontal) {
                         
-                        HStack() {
+                        HStack {
                             
                             ForEach(pharmacies, id: \.self) {
                                 pharmacy in
@@ -123,7 +124,7 @@ struct HomeView: View {
                                     Text(pharmacy)
                                 }
                             }
-                        }
+                        }.padding()
                     }
                     
                 }

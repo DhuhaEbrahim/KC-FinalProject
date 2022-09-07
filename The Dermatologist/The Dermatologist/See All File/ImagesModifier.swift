@@ -13,7 +13,7 @@ struct ImagesModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
             
-        .frame(width: 150, height: 200)
+        .frame(width: 170, height: 200)
         .border(Color("Dark"))
         .overlay(
             RoundedRectangle(cornerRadius: 10)

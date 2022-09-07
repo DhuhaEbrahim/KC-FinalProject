@@ -75,8 +75,8 @@ struct CreateAccountView: View {
                         NavigationLink(destination: HomeView(name: userName).navigationBarBackButtonHidden(true), isActive: $iscreated)  {EmptyView()}
                         
                         
-                        Button("Create Account") {
-                            
+                        Button{
+                            withAnimation(.easeInOut(duration: 1)) {
                             if password != confirmPassword {
                                 alertSign = "exclamationmark.circle.fill"
                                 alert = "Please make sure to enter the same password"
@@ -84,25 +84,32 @@ struct CreateAccountView: View {
                             
                             else if userName == "" || email == "" || password == "" || confirmPassword == "" {
                                 alertSign = "exclamationmark.circle.fill"
-                                alert = " Please enter all you information"
+                                alert = " Please enter all your information"
                                 
                             } else if ischecked != true {
                                 alertSign = "exclamationmark.circle.fill"
-                                alert = "please agree to our terms and conditions"
+                                alert = "please agree to our terms of service"
                             }
                             
                             else {
                                 iscreated = true
                             }
-                            
+                            }
+                        } label: {
+                            withAnimation(.easeInOut(duration: 1)) {
+                            Text("Next")
+                                .padding()
+                                .frame(width: 200, height: 50)
+                                .font(.custom("Rubik-Medium", size: 25))
+                                .background(Color("Primary"))
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                .shadow(radius: 5)
+                            }
+
                         }
                         .padding()
-                        .frame(width: 300, height: 50)
-                        .font(.custom("Rubik-Medium", size: 20))
-                        .background(Color("Primary"))
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .shadow(radius: 5)
-                        Spacer()
+                 
+                       Spacer()
                     }
                 }
                 
